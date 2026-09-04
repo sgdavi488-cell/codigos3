@@ -16,9 +16,15 @@
         }
 
         .Perfil {
+            position: relative;
             display: flex;
             flex-direction: row;
-            justify-content: baseline;
             align-items: center;
-            gap: 20px;
+            gap: 10px;
+        }
+
+        .Voltar {
+            position: absolute;
+            right: 20px;
+            top: 50px;
         }
