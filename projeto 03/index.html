@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src = "script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <input type = "text"; placeholder = "Usuaro"; id = "usuario">
+    <input type = "password"; placeholder = "senha"; id = "senha">
+
+    <button onclick="criarConta()">Criáh</button>
+    <p id ="mensagem"></p>
+
+    <script>
+        function criarConta() {
+            document.getElementById("mensagem").textContent = "o usuaro caiomosa já utilisa esa senha"
+        }
+    </script>
+</body>
+</html>
