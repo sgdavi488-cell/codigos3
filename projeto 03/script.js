@@ -1,1 +1,0 @@
-let aura = 0

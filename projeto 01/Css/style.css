@@ -1,0 +1,34 @@
+body {
+    background-color:#1A1A1A 
+}
+
+header {
+    background-color:darkred;
+    border-radius: 100px;
+}
+
+.Botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav {
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    margin: 20px;
+}
+
+.Bebidas {
+    color:red;
+    text-decoration: none;
+}
+
+.PratoP {
+    color:red;
+    text-decoration: none;
+}

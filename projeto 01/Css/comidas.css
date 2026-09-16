@@ -2,6 +2,11 @@ body {
     background-color:#1A1A1A 
 }
 
+header {
+    background-color:darkred;
+    border-radius: 100px;
+}
+
 .Cardapio {
     display: flex;
     justify-content: center;
@@ -47,11 +52,6 @@ body {
     color:burlywood;
     margin: 10px;
 }
-
-#TituloB {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:antiquewhite;
-    }
 
 #PratosP {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -103,40 +103,51 @@ body {
 
 .imagem {
     position: absolute;
-    top: 140%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 200px;
 }
 
 #picanha {
-    border-radius: 300PX;
-    height: 275PX;
-    width: 300px;
+    border-radius: 250px;
+    height: 200px;
+    width: 250px;
 }
 
 #Hamborgue {
     display: flex;
-    border-radius: 300PX;
-    height: 275px;
-    width: 300px;
+    border-radius: 250px;
+    height: 200px;
+    width: 250px;
 }
 
 #batata {
     display: flex;
-    border-radius: 300PX;
-    height: 275px;
-    width: 300px;
+    border-radius: 250px;
+    height: 200px;
+    width: 250px;
 }
 
 #queijo {
     display: flex;
-    border-radius: 300PX;
-    height: 275px;
-    width: 300px;
+    border-radius: 250px;
+    height: 200px;
+    width: 250px;
 }
 
 #Footer {
     color:burlywood;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Inicio {
+    position: absolute;
+    top: 24%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    color:red;
+    font-size: 50px;
+    display: inline;
+    text-decoration: none;
 }
