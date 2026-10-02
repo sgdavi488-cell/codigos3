@@ -6,55 +6,68 @@
     <title>Cardápio digital</title>
     <link rel="stylesheet" href="../Css/comidas.css">
     <header>
-    <h1 class = "Nome">Restaurante Sabor Da Casa</h1>
-    <h1 class = "Cardapio">Cardápio</h1>
-    <h1 class = "Tradicional">Tradicional</h1>
+        <h1 class="Nome">Restaurante Sabor Da Casa</h1>
+        <h1 class="Cardapio">Cardápio</h1>
+        <h1 class="Tradicional">Tradicional</h1>
     </header>
 </head>
 <body>
-    <h1 id = "TituloP">Porções</h1>
-    <ul class = "Porções">
-        <li>Batata Canoa              20R$</li>
-        <li>Batata Palito             20R$</li>
-        <li>Iscas De Frango           20R$</li>
-        <li>Peixe Empanado            20R$</li>
-        <li>Mix De Vegetais Grelhados 20R$</li>
-        <li>Mandioquinha Frita        20R$</li>
+    <h1 id="TituloP">Porções</h1>
+    <ul class="Porções">
+        <li>Batata Canoa - R$ 20,00 <button class="btn-pedir" onclick="adicionarItem('Batata Canoa', 20.00)">Adicionar</button></li>
+        <li>Batata Palito - R$ 20,00 <button class="btn-pedir" onclick="adicionarItem('Batata Palito', 20.00)">Adicionar</button></li>
+        <li>Iscas De Frango - R$ 20,00 <button class="btn-pedir" onclick="adicionarItem('Iscas De Frango', 20.00)">Adicionar</button></li>
+        <li>Peixe Empanado - R$ 20,00 <button class="btn-pedir" onclick="adicionarItem('Peixe Empanado', 20.00)">Adicionar</button></li>
+        <li>Mix De Vegetais Grelhados - R$ 20,00 <button class="btn-pedir" onclick="adicionarItem('Mix De Vegetais Grelhados', 20.00)">Adicionar</button></li>
+        <li>Mandioquinha Frita - R$ 20,00 <button class="btn-pedir" onclick="adicionarItem('Mandioquinha Frita', 20.00)">Adicionar</button></li>
     </ul>
 
-    <div class = "imagem">
-        <img src = "../imagens/picanha.jfif"; id = "picanha">
-        <img src = "../imagens/hamborge.jfif"; id = "Hamborgue">
-        <img src = "../imagens/batata.jfif"; id = "batata">
-        <img src = "../imagens/queijo coalho.jfif"; id = "queijo">
+    <div class="imagem">
+        <img src="../imagens/picanha.jfif" id="picanha">
+        <img src="../imagens/hamborge.jfif" id="Hamborgue">
+        <img src="../imagens/batata.jfif" id="batata">
+        <img src="../imagens/queijo coalho.jfif" id="queijo">
     </div>
 
-    
-
-    <h1 id = "PratosP">Pratos Principais</h1>
-    <ul class = "Principais">
-        <li>Picanha na Manteiga</li>
-        <h3 id = "Picanha">Picanha Grelhada, Arroz, Farofa <br>e vinagrete da casa</h3>
-        <li>Tábua de Frios</li>
-        <h3 id = "Tabua">Mix de queijo, Salame e molhos</h3>
-        <li>Peixe Frito Com Batata</li>
-        <h3 id = "Peixe">Peixe empanado com batata gratinada <br>e queijo</h3>
-        <li>Picanha Com Batata Frita</li>
-        <h3 id = "PicanhaCBatata">Porção de batata frita, Arroz, Picanha grelhada<br> Queijo coalho e o molho especial da casa</h3>
-        <li>Costela Fogo De Chão</li>
-        <h3 id = "Costela">Costela, Batata frita com cheddar e bacon<br> Arroz e Pão de Alho</h3>
-        <li>Tábua Mista G</li>
-        <h3 id = "TabuaMista">Batata Frita, Picanha, Tilapia, asa de frango<br> e Molhos</h3>
+    <h1 id="PratosP">Pratos Principais</h1>
+    <ul class="Principais">
+        <li>Picanha na Manteiga - R$ 65,00 <button class="btn-pedir" onclick="adicionarItem('Picanha na Manteiga', 65.00)">Adicionar</button></li>
+        <h3 id="Picanha">Picanha Grelhada, Arroz, Farofa <br>e vinagrete da casa</h3>
+        
+        <li>Tábua de Frios - R$ 50,00 <button class="btn-pedir" onclick="adicionarItem('Tábua de Frios', 50.00)">Adicionar</button></li>
+        <h3 id="Tabua">Mix de queijo, Salame e molhos</h3>
+        
+        <li>Peixe Frito Com Batata - R$ 55,00 <button class="btn-pedir" onclick="adicionarItem('Peixe Frito Com Batata', 55.00)">Adicionar</button></li>
+        <h3 id="Peixe">Peixe empanado com batata gratinada <br>e queijo</h3>
+        
+        <li>Picanha Com Batata Frita - R$ 70,00 <button class="btn-pedir" onclick="adicionarItem('Picanha Com Batata Frita', 70.00)">Adicionar</button></li>
+        <h3 id="PicanhaCBatata">Porção de batata frita, Arroz, Picanha grelhada<br> Queijo coalho e o molho especial da casa</h3>
+        
+        <li>Costela Fogo De Chão - R$ 80,00 <button class="btn-pedir" onclick="adicionarItem('Costela Fogo De Chão', 80.00)">Adicionar</button></li>
+        <h3 id="Costela">Costela, Batata frita com cheddar e bacon<br> Arroz e Pão de Alho</h3>
+        
+        <li>Tábua Mista G - R$ 90,00 <button class="btn-pedir" onclick="adicionarItem('Tábua Mista G', 90.00)">Adicionar</button></li>
+        <h3 id="TabuaMista">Batata Frita, Picanha, Tilapia, asa de frango<br> e Molhos</h3>
         <hr>
     </ul>
 
-    
+    <!-- Carrinho Flutuante -->
+    <div id="carrinho-flutuante" class="carrinho-escondido">
+        <h3>Seu Pedido</h3>
+        <ul id="lista-carrinho"></ul>
+        <p>Total: R$ <span id="valor-total">0.00</span></p>
+        <button onclick="enviarWhatsApp()" class="btn-whatsapp">Enviar Pedido via WhatsApp</button>
+        <button onclick="alternarCarrinho()" class="btn-fechar">Fechar</button>
+    </div>
+
+    <button onclick="alternarCarrinho()" class="btn-abrir-carrinho">🛒 Ver Carrinho (<span id="contador-carrinho">0</span>)</button>
 </body>
 <footer>
-    <div id = "Footer">
+    <div id="Footer">
         <h1>Formas de Contato:</h1>
         <h2>Whatsapp: +55 (00) 00000-0000<br> Email: SaborDaCasa@email.com<br> Ifood: @Sabor Da Casa BV<br>Instagram: @sabordcasabviagem</h2>
     </div>
-    <a href = "index.html"; class = "Inicio">Ínicio</a>
+    <a href="index.html" class="Inicio">Ínicio</a>
 </footer>
+<script src="../Css/script.js"></script>
 </html>
