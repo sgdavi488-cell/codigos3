@@ -1,34 +1,179 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 body {
-    background-color:#1A1A1A 
+font-family: Arial, Helvetica, sans-serif;
+background: #1a1a1a;
+color: white;
 }
 
-header {
-    background-color:darkred;
-    border-radius: 100px;
+
+.inicio {
+min-height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+text-align: center;
+
+padding: 20px;
+
+background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.9)
+    ),
+    radial-gradient(
+        circle at center,
+        #5c0000 0%,
+        #260000 45%,
+        #1a1a1a 100%
+    );
+
+
 }
 
-.Botoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+
+.conteudo {
+width: 100%;
+max-width: 600px;
+
+padding: 50px 30px;
+
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 25px;
+
+background: rgba(20, 20, 20, 0.75);
+
+box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.7),
+    inset 0 0 30px rgba(139, 0, 0, 0.1);
+
+backdrop-filter: blur(8px);
+
+
 }
+
+
+.subtitulo {
+display: block;
+
+color: #d4af37;
+
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 5px;
+
+margin-bottom: 15px;
+
+
+}
+
+
+h1 {
+color: #ffffff;
+
+font-size: clamp(40px, 8vw, 70px);
+
+margin-bottom: 15px;
+
+font-family: Georgia, 'Times New Roman', serif;
+
+text-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.8);
+
+
+}
+
+
+.conteudo p {
+color: #bbbbbb;
+
+font-size: 18px;
+
+margin-bottom: 35px;
+
+
+}
+
 
 .nav {
-    position: absolute;
-    top: 40%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    margin: 20px;
+display: flex;
+flex-direction: column;
+gap: 15px;
 }
 
-.Bebidas {
-    color:red;
-    text-decoration: none;
+
+.botao {
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 100%;
+
+padding: 18px 25px;
+
+border-radius: 12px;
+
+background: #8b0000;
+
+color: white;
+
+text-decoration: none;
+
+font-size: 20px;
+font-weight: bold;
+
+border: 1px solid #a00000;
+
+transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+
+
 }
 
-.PratoP {
-    color:red;
-    text-decoration: none;
+
+.botao:hover {
+background: #b00000;
+
+transform: translateY(-3px);
+
+box-shadow:
+    0 10px 25px rgba(139, 0, 0, 0.4);
+
+
+}
+
+
+.botao:active {
+transform: translateY(0);
+}
+
+
+@media (max-width: 500px) {
+
+.conteudo {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.conteudo p {
+    font-size: 16px;
+}
+
+.botao {
+    font-size: 18px;
+    padding: 16px;
+}
+
+
 }
