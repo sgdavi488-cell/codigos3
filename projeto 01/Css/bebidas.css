@@ -85,6 +85,7 @@ header {
 }
 
 .coca {
+    pointer-events: none;
     position: absolute;
     top: 70%;
     left: 50%;
