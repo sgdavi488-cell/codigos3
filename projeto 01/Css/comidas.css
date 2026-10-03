@@ -1,107 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color:#1A1A1A 
+    margin: 0;
+    background: #1A1A1A;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color:darkred;
-    border-radius: 100px;
-}
-
-.Cardapio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:burlywood;
+    margin: 20px auto 35px;
+    padding: 28px 20px;
+    max-width: 1100px;
+    text-align: center;
+    background: linear-gradient(135deg, #650000, #9b0000);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
 .Nome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:burlywood;
+    margin: 0;
+    color: #f5d99a;
+    font-size: clamp(24px, 4vw, 42px);
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.Cardapio {
+    margin: 6px 0 0;
+    color: white;
+    font-size: clamp(32px, 5vw, 54px);
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 .Tradicional {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    color:burlywood;
+    margin: 6px 0 0;
+    color: #e8c98b;
+    font-size: clamp(18px, 3vw, 28px);
+    font-family: 'Courier New', monospace;
+    letter-spacing: 3px;
 }
 
-.Porções {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color:burlywood;
-    margin: 10px;
+#TituloP, #PratosP {
+    width: fit-content;
+    margin: 25px auto 15px;
+    padding: 10px 24px;
+    color: #fff4dc;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(28px, 5vw, 42px);
+    border-bottom: 2px solid #8b0000;
 }
 
-#TituloP {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:antiquewhite;
+.Porções, .Principais {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f0d7a0;
+    margin: 10px auto 35px;
+    max-width: 950px;
+    padding: 0 20px;
 }
 
-.Bebidas {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color:burlywood;
-    margin: 10px;
+.Porções { font-size: 20px; }
+.Principais { font-size: 22px; }
+
+.Porções li, .Principais li {
+    margin: 12px 0;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.04);
 }
 
-#PratosP {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:antiquewhite
-}
-
-.Principais {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    color:bisque;
-    margin: 10px;
-}
-
-#Picanha {
+#Picanha, #Tabua, #Peixe, #PicanhaCBatata, #Costela, #TabuaMista {
+    max-width: 900px;
+    margin: -4px auto 16px;
+    padding: 0 20px;
     font-size: 15px;
     font-family: cursive;
-    color:burlywood;
-}
-
-#Tabua {
-    font-size: 15px;
-    font-family: cursive;
-    color:burlywood;
-}
-
-#Peixe {
-    font-size: 15px;
-    font-family: cursive;
-    color:burlywood;
-}
-
-#PicanhaCBatata {
-    font-size: 15px;
-    font-family: cursive;
-    color:burlywood;
-}
-
-#Costela {
-    font-size: 15px;
-    font-family: cursive;
-    color:burlywood;
-}
-
-#TabuaMista {
-    font-size: 15px;
-    font-family: cursive;
-    color:burlywood;
+    color: #c9aa72;
 }
 
 .imagem {
+    pointer-events: none;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -109,54 +88,65 @@ header {
     padding: 200px;
 }
 
-#picanha {
+#picanha, #Hamborgue, #batata, #queijo {
     border-radius: 250px;
     height: 200px;
     width: 250px;
 }
 
-#Hamborgue {
+#Hamborgue, #batata, #queijo {
     display: flex;
-    border-radius: 250px;
-    height: 200px;
-    width: 250px;
-}
-
-#batata {
-    display: flex;
-    border-radius: 250px;
-    height: 200px;
-    width: 250px;
-}
-
-#queijo {
-    display: flex;
-    border-radius: 250px;
-    height: 200px;
-    width: 250px;
 }
 
 #Footer {
-    color:burlywood;
+    margin-top: 50px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #d8bd82;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #111;
+}
+
+#Footer h1 {
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+
+#Footer h2 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: normal;
 }
 
 .Inicio {
-    position: absolute;
-    top: 24%;
-    left: 12%;
-    transform: translate(-50%, -50%);
-    color:red;
-    font-size: 50px;
-    display: inline;
+    display: flex;
+    width: fit-content;
+    margin: 22px auto 35px;
+    padding: 12px 28px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #8b0000;
+    border: 1px solid #b00000;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    transition: 0.2s ease;
+}
+
+.Inicio:hover {
+    background: #b00000;
+    transform: translateY(-2px);
 }
 
 .btn-abrir-carrinho {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: darkred;
+    background: #8b0000;
     color: white;
     border: none;
     padding: 15px 20px;
@@ -173,9 +163,11 @@ header {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 320px;
+    width: min(320px, calc(100vw - 40px));
+    max-height: 75vh;
+    overflow-y: auto;
     background: #222;
-    border: 2px solid darkred;
+    border: 2px solid #8b0000;
     border-radius: 15px;
     padding: 20px;
     color: white;
@@ -183,23 +175,20 @@ header {
     z-index: 1000;
 }
 
-.carrinho-ativo {
-    display: block;
-}
+.carrinho-ativo { display: block; }
 
 .btn-pedir {
     background: #8b0000;
     color: white;
     border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 7px 12px;
+    border-radius: 6px;
     cursor: pointer;
     margin-left: 10px;
+    font-weight: bold;
 }
 
-.btn-pedir:hover {
-    background: #b00000;
-}
+.btn-pedir:hover { background: #b00000; }
 
 .btn-whatsapp {
     background: #25d366;
@@ -218,8 +207,15 @@ header {
     color: white;
     border: none;
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    header { margin: 10px; padding: 22px 12px; }
+    .Porções, .Principais { padding: 0 12px; }
+    .Porções li, .Principais li { font-size: 16px; }
+    .btn-abrir-carrinho { right: 10px; bottom: 10px; }
 }
