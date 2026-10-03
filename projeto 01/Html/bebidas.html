@@ -1,59 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio digital - Bebidas</title>
-    <link rel="stylesheet" href="../Css/bebidas.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Cardápio digital - Bebidas</title><link rel="stylesheet" href="../Css/bebidas.css"></head>
 <body>
-    <header>
-        <h1 class="Nome">Restaurante Sabor Da Casa</h1>
-        <h2 class="Cardapio">Cardápio</h2>
-        <p class="Tradicional">Tradicional</p>
-    </header>
-
-    <main>
-        <h1 class="TituloB">Bebidas</h1>
-        <ul class="Bebidas">
-            <li>Refrigerante Antarctica 1L - R$ 7,00 <button class="btn-pedir" onclick="adicionarItem('Refrigerante Antarctica 1L', 7.00)">Adicionar</button></li>
-            <li>Pepsi 1L - R$ 6,50 <button class="btn-pedir" onclick="adicionarItem('Pepsi 1L', 6.50)">Adicionar</button></li>
-            <li>Fanta Laranja 800ml - R$ 5,00 <button class="btn-pedir" onclick="adicionarItem('Fanta Laranja 800ml', 5.00)">Adicionar</button></li>
-            <li>Coca-Cola 1L - R$ 8,00 <button class="btn-pedir" onclick="adicionarItem('Coca-Cola 1L', 8.00)">Adicionar</button></li>
-            <li>Guaraná Kuat 1L - R$ 6,00 <button class="btn-pedir" onclick="adicionarItem('Guaraná Kuat 1L', 6.00)">Adicionar</button></li>
-            <li>Suco Natural de Laranja 1L - R$ 9,00 <button class="btn-pedir" onclick="adicionarItem('Suco Natural de Laranja 1L', 9.00)">Adicionar</button></li>
-            <li>Suco Natural de Limão 1L - R$ 8,00 <button class="btn-pedir" onclick="adicionarItem('Suco Natural de Limão 1L', 8.00)">Adicionar</button></li>
-            <li>Suco em Lata 350ml - R$ 5,00 <button class="btn-pedir" onclick="adicionarItem('Suco em Lata 350ml', 5.00)">Adicionar</button></li>
-            <li>Chá Gelado (Limão/Pêssego) 1,5L - R$ 7,50 <button class="btn-pedir" onclick="adicionarItem('Chá Gelado 1,5L', 7.50)">Adicionar</button></li>
-            <li>Água Mineral 500ml - R$ 3,00 <button class="btn-pedir" onclick="adicionarItem('Água Mineral 500ml', 3.00)">Adicionar</button></li>
-            <li>Água com Gás 500ml - R$ 4,00 <button class="btn-pedir" onclick="adicionarItem('Água com Gás 500ml', 4.00)">Adicionar</button></li>
-            <li>Água com Gás 1L - R$ 6,00 <button class="btn-pedir" onclick="adicionarItem('Água com Gás 1L', 6.00)">Adicionar</button></li>
-            <li>Água de Coco 1L - R$ 10,00 <button class="btn-pedir" onclick="adicionarItem('Água de Coco 1L', 10.00)">Adicionar</button></li>
-        </ul>
-
-        <div class="coca">
-            <img src="../imagens/coca.jfif" alt="Coca cola" class="coquinha">
-        </div>
-    </main>
-
-    <div id="carrinho-flutuante" class="carrinho-escondido">
-        <h3>Seu Pedido</h3>
-        <ul id="lista-carrinho"></ul>
-        <p>Total: R$ <span id="valor-total">0.00</span></p>
-        <button onclick="enviarWhatsApp()" class="btn-whatsapp">Enviar Pedido via WhatsApp</button>
-        <button onclick="alternarCarrinho()" class="btn-fechar">Fechar</button>
-    </div>
-
-    <button onclick="alternarCarrinho()" class="btn-abrir-carrinho">🛒 Ver Carrinho (<span id="contador-carrinho">0</span>)</button>
-
-    <footer>
-        <div id="Footer">
-            <h1>Formas de Contato:</h1>
-            <h2>Whatsapp: +55 (00) 00000-0000<br> Email: SaborDaCasa@email.com<br> Ifood: @Sabor Da Casa BV<br>Instagram: @sabordcasabviagem</h2>
-        </div>
-        <a href="index.html" class="Inicio">← Início</a>
-    </footer>
-
-    <script src="../Css/script.js"></script>
-</body>
-</html>
+<header><h1 class="Nome">Restaurante Sabor Da Casa</h1><h2 class="Cardapio">Cardápio</h2><p class="Tradicional">Tradicional</p></header>
+<main><h1 class="TituloB">Bebidas</h1>
+<ul class="Bebidas">
+<li>Refrigerante Antarctica 1L - R$ 7,00 <button class="btn-pedir" onclick="adicionarItem('Refrigerante Antarctica 1L',7)">Adicionar</button></li>
+<li>Pepsi 1L - R$ 6,50 <button class="btn-pedir" onclick="adicionarItem('Pepsi 1L',6.5)">Adicionar</button></li>
+<li>Fanta Laranja 800ml - R$ 5,00 <button class="btn-pedir" onclick="adicionarItem('Fanta Laranja 800ml',5)">Adicionar</button></li>
+<li>Coca-Cola 1L - R$ 8,00 <button class="btn-pedir" onclick="adicionarItem('Coca-Cola 1L',8)">Adicionar</button></li>
+<li>Guaraná Kuat 1L - R$ 6,00 <button class="btn-pedir" onclick="adicionarItem('Guaraná Kuat 1L',6)">Adicionar</button></li>
+<li>Suco Natural de Laranja 1L - R$ 9,00 <button class="btn-pedir" onclick="adicionarItem('Suco Natural de Laranja 1L',9)">Adicionar</button></li>
+<li>Suco Natural de Limão 1L - R$ 8,00 <button class="btn-pedir" onclick="adicionarItem('Suco Natural de Limão 1L',8)">Adicionar</button></li>
+<li>Suco em Lata 350ml - R$ 5,00 <button class="btn-pedir" onclick="adicionarItem('Suco em Lata 350ml',5)">Adicionar</button></li>
+<li>Chá Gelado (Limão/Pêssego) 1,5L - R$ 7,50 <button class="btn-pedir" onclick="adicionarItem('Chá Gelado 1,5L',7.5)">Adicionar</button></li>
+<li>Água Mineral 500ml - R$ 3,00 <button class="btn-pedir" onclick="adicionarItem('Água Mineral 500ml',3)">Adicionar</button></li>
+<li>Água com Gás 500ml - R$ 4,00 <button class="btn-pedir" onclick="adicionarItem('Água com Gás 500ml',4)">Adicionar</button></li>
+<li>Água com Gás 1L - R$ 6,00 <button class="btn-pedir" onclick="adicionarItem('Água com Gás 1L',6)">Adicionar</button></li>
+<li>Água de Coco 1L - R$ 10,00 <button class="btn-pedir" onclick="adicionarItem('Água de Coco 1L',10)">Adicionar</button></li>
+</ul>
+<section class="imagem-bebida" aria-label="Imagem de bebida"><figure><img src="../imagens/coca.jfif" alt="Coca-Cola"></figure></section></main>
+<div id="carrinho-flutuante" class="carrinho-escondido"><h3>Seu Pedido</h3><ul id="lista-carrinho"></ul><p>Total: R$ <span id="valor-total">0.00</span></p><button onclick="enviarWhatsApp()" class="btn-whatsapp">Enviar Pedido via WhatsApp</button><button onclick="alternarCarrinho()" class="btn-fechar">Fechar</button></div>
+<button onclick="alternarCarrinho()" class="btn-abrir-carrinho">🛒 Ver Carrinho (<span id="contador-carrinho">0</span>)</button>
+<footer><div id="Footer"><h1>Formas de Contato:</h1><h2>Whatsapp: +55 (00) 00000-0000<br>Email: SaborDaCasa@email.com<br>Ifood: @Sabor Da Casa BV<br>Instagram: @sabordcasabviagem</h2></div><a href="index.html" class="Inicio">← Início</a></footer>
+<script src="../Css/script.js"></script>
+</body></html>
