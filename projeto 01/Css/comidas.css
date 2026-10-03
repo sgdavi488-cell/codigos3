@@ -102,6 +102,7 @@ header {
 }
 
 .imagem {
+    pointer-events: none;
     position: absolute;
     top: 110%;
     left: 50%;
