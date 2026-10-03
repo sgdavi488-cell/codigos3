@@ -79,13 +79,34 @@ header {
     color: #c9aa72;
 }
 
-.imagem {
-    pointer-events: none;
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 200px;
+.galeria-comidas {
+    width: min(950px, calc(100% - 32px));
+    margin: 35px auto 55px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.galeria-comidas figure {
+    margin: 0;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: #111;
+    box-shadow: 0 10px 25px rgba(0,0,0,.35);
+}
+
+.galeria-comidas img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .3s ease;
+}
+
+.galeria-comidas figure:hover img {
+    transform: scale(1.06);
 }
 
 #picanha, #Hamborgue, #batata, #queijo {
@@ -213,9 +234,26 @@ header {
     margin-top: 5px;
 }
 
+@media (max-width: 800px) {
+    .galeria-comidas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 600px) {
-    header { margin: 10px; padding: 22px 12px; }
+    header { margin: 10px auto 25px; padding: 22px 12px; width: calc(100% - 20px); }
     .Porções, .Principais { padding: 0 12px; }
-    .Porções li, .Principais li { font-size: 16px; }
-    .btn-abrir-carrinho { right: 10px; bottom: 10px; }
+    .Porções li, .Principais li { font-size: 16px; line-height: 1.5; }
+    .btn-pedir { display: block; margin: 8px 0 0; padding: 9px 14px; }
+    .galeria-comidas { width: calc(100% - 24px); gap: 12px; margin: 30px auto 40px; }
+    .btn-abrir-carrinho { right: 10px; bottom: 10px; font-size: 16px; padding: 13px 16px; }
+    .carrinho-escondido { right: 10px; bottom: 10px; width: calc(100vw - 20px); }
+    #Picanha,#Tabua,#Peixe,#PicanhaCBatata,#Costela,#TabuaMista { font-size: 14px; line-height: 1.5; }
+}
+
+@media (max-width: 380px) {
+    .galeria-comidas { grid-template-columns: 1fr; }
+    .Nome { font-size: 23px; }
+    .Cardapio { font-size: 30px; }
+    .Tradicional { font-size: 16px; letter-spacing: 2px; }
 }
